@@ -1,0 +1,95 @@
+<html>
+<head>
+<title> Profil Nora</title>
+<script>
+function Changes(){
+document.getElementById("1").innerHTML="Ing. in telecomunicatii la sediul sts";
+  document.getElementById("5").innerHTML="gamming";
+  document.getElementById("6").innerHTML="teoria semnalelor";
+  document.getElementById("7").innerHTML="analiza circuitelor integrate";
+  document.getElementById("pic").src="da2.jpeg";
+  document.body.style.backgroundColor="LightSteelBlue";
+  document.getElementById("1").style.color="red";
+  document.getElementById("2").style.color="DarkRed";
+  document.getElementById("3").style.color="purple";
+  document.getElementById("pic").style.opacity="4";
+  document.getElementById("pic").style.width="530px";
+  document.getElementById("pic").style.border="6px";
+  document.getElementById("4").style.color="black";
+  }
+  function myFunction() {
+  var x = document.getElementById("gr");
+  x.style.color="red";
+  var y = document.getElementById("gr2");
+  y.style.color="red";
+  var z = document.getElementById("gr3");
+  z.style.color="red";
+  var t = document.getElementById("gr4");
+  t.style.color="red";
+}
+function age(){
+var azi=new Date;
+var VarstaMea;
+
+var anNastere = document.getElementById("varsta").innerHTML;
+var anCurent =azi.getFullYear();
+
+varstaMea=anCurent-anNastere;
+document.getElementById("varsta")=varstaMea;
+
+
+}
+ 
+  </script>
+</head>
+<body>
+<link rel="stylesheet" href="bla.css">
+<marquee>Profil Nora</marquee>
+<div class="nume1">
+<p id="1">Nume:Beletei Nora Elisa</p>
+<p id="2">Numar telefon: 0769xxxxxx</p>
+<p id="3">Email: Beletei.Vi.Nora@utcluj.didiatec.ro</p>
+
+</div>
+<p id="varsta">2001</p>
+<button  onmouseover="age()">hover it </button>
+<div class="nume2">
+<img id="pic" src="da.jpg"></img>
+</div>
+<p id="par">Citat:Învățați, învățați, învățați. Vladimir Ilici Lenin</p>
+
+<div class="grid-container">
+  <div class="item1">Discipina</div>
+  <div class="item2">An de studiu</div>
+  <div class="item3">Link</div>  
+  <div id="gr" class="item4">COMPONENTE SI CIRCUITE PASIVE</div>
+  <div class="item5">Anul 1 </div>
+  <div class="item6"><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/05.pdf">CCP</a></div>
+   <div id="gr2" class="item7">FIZICA</div>
+  <div class="item8">Anul 1 </div>
+  <div class="item9"><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/03.pdf">Fizica</a></div>
+   <div id="gr3" class="item10">ALGEBRA LINIARA SI GEOMETRIE ANALITICA SI DIFERENTIALA</div>
+  <div class="item11">Anul 1 </div>
+  <div class="item12"><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/02.pdf">Algebra</a></div>
+   <div id="gr4" class="item13">PROGRAMAREA CALCULATOARELOR</div>
+  <div id="gr" >Anul 1 </div>
+  <div  class="item15"><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/04.pdf">Programare</a></div>
+  
+</div>
+<button onclick="myFunction()">Selecteaza disciplinele aferente primului an de studiu</button>
+<h2 id="4">Preferinte</h2>
+
+<ol class="nume3">
+  <li id="5">muzica</li>
+  <li id="6">sportul</li>
+  <li id="7">programarea web</li>
+</ol> 
+
+<button class="button"><a href="catalogcolegi.html" >Catalog colegi</a></button>
+<button type="button" onclick="Changes()">Alta viata</button>
+
+
+
+
+
+</body>
